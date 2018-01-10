@@ -26,8 +26,8 @@ body {
 .hero--title {
   // width: 290px;
   // height: 110px;
-  font-family: RobotoSlab;
-  font-size: 42px;
+	font-family: 'Roboto Slab', serif;
+	font-size: 42px;
   font-weight: bold;
   font-style: normal;
   font-stretch: normal;
@@ -41,13 +41,16 @@ body {
 	margin: 0 auto;
 	// line-height: 55px;
 	// width: 100%;
+	background: rgba(black,0);
+	transition: background ease .7s;
 }
 
 .hero--text {
 	// width: 290px;
 	// height: 21px;
 	color: $colorWhite;
-	font-family: Roboto;
+	font-family: 'Roboto', sans-serif;
+  font-weight: bold;
 	font-size: 16px;
 	text-align: center;
 	padding-top: 10px;
@@ -84,14 +87,6 @@ body {
   left: 13px;
 }
 
-
-
-
-
-
-
-
-
 .menu-button {
 	width: 44px;
 	height: 44px;
@@ -99,19 +94,42 @@ body {
 	border: 0;
 }
 
+
+
 .sideMenu {
 	position: fixed;
 	top: 0;
 	left: 0;
-	// transform: translateX(0%);
-	transform: translateX(-120%);
   width: 276px;
 	height: 100vh;
   opacity: 0.96;
   background-color: $colorWhite;
 	padding-top: 44px;
 	z-index: 2;
+
+	transform: translateX(-120%);
+	background: rgba(white,0);
+  transition: transform ease .3s, background ease 1s .7s;
 }
+
+
+.menu-visible .sideMenu {
+	background: rgba(white,.96);
+
+	transform: translateX(0%);
+	transition: transform ease .8s, background ease 1s .7s;
+ }
+
+.menu-visible .hero {
+	background: rgba(black,.5);
+	transition: background ease .7s;
+}
+
+
+
+
+
+
 
 .close-button {
 	background-color: $bright-orange;
@@ -137,16 +155,19 @@ body {
 	padding-left: 15px;
 	// width: 139px;
   color: $colorDarkBlue;
-	font-family: RobotoSlab;
+	font-family: 'Roboto Slab', serif;
 	font-size: 16px;
 	font-weight: 300;
 	line-height: 45px;
 	text-align: left;
 }
 
-.menu-visible {
-	transform: translateX(0%);
-}
+
+
+
+
+
+
 
 
 
@@ -168,7 +189,8 @@ body {
 	// width: 90px;
 	// height: 30px;
 	color: $colorLightBlue;
-	font-family: Roboto;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
 	text-align: left;
 	font-size: 14px;
 	line-height: 30px;
@@ -178,7 +200,7 @@ body {
 	// width: 290px;
 	// height: 60px;
 	color: $colorBlack;
-	font-family: RobotoSlab;
+	font-family: 'Roboto Slab', serif;
 	font-size: 24px;
 	font-weight: bold;
 	line-height: 30px;
@@ -190,7 +212,8 @@ body {
 	// width: 290px;
 	// height: 120px;
 	color: $colorDarkGrey;
-	font-family: Roboto-Regular;
+	font-family: 'Roboto', sans-serif;
+  font-weight: 400;
 	font-size: 18px;
 	line-height: 30px;
 	text-align: left;
@@ -204,7 +227,7 @@ body {
   border: solid 2px $bright-orange;
 // 	width: 25px;
 // height: 45px;
-	font-family: Roboto;
+	font-family: 'Roboto', sans-serif;
 	font-size: 20px;
 	font-weight: 500;
 	line-height: 2.25;
@@ -212,12 +235,6 @@ body {
 	color: $bright-orange;
 	background-color: $colorWhite;
 }
-
-
-
-
-
-
 
 .reasons { //su Rectangle-2
   width: 100vw;
@@ -234,12 +251,11 @@ body {
   // height: 30px;
   color: $colorBlack;
 
-	font-family: RobotoSlab;
+	font-family: 'Roboto Slab', serif;
 	font-size: 24px;
 	font-weight: bold;
 	line-height: 1.25;
 	text-align: center;
-
 	padding-top: 30px;
 	padding-bottom: 45px;
 }
@@ -260,7 +276,7 @@ body {
   // height: 30px;
   color: $colorBlack;
 
-	font-family: RobotoSlab;
+	font-family: 'Roboto Slab', serif;
 	font-size: 18px;
 	font-weight: bold;
 	line-height: 30px;
@@ -271,7 +287,8 @@ body {
   // width: 180px;
   // height: 63px;
 
-	font-family: Roboto-Regular;  //escrito a mano el regular
+	font-family: 'Roboto', sans-serif;
+  font-weight: 400;
 	font-size: 18px;
 	line-height: 30px;
 	text-align: center;
@@ -286,7 +303,11 @@ body {
   background-color: $bright-orange;
 	border: 2px solid #f26002;
 	border: 0;
-	margin: 0 auto;
+
+	display: block;
+	margin: auto;
+	margin-bottom: 60px;
+
 	// bottom: 60px;
 	// top: 0;
 	// left: 0;
@@ -301,7 +322,7 @@ body {
 	// width: 133px;
 	// height: 45px;
 
-	font-family: Roboto;
+	font-family: 'Roboto', sans-serif;
 	font-size: 20px;
 	font-weight: 500;
 	font-style: normal;

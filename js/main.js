@@ -2,9 +2,9 @@
 
 // 1. FUNCIONALIDAD MENÚ LATERAL_____________
 var body = document.querySelector('body');
+var itemLinks = document.querySelectorAll('.menu--link');
 var menuButton = document.querySelector('.menu-button')
 var closeButton = document.querySelector('.close-button');
-
 
 function openNavMenu() {
 	body.classList.add('menu-visible');
@@ -17,14 +17,27 @@ function closeNavMenu() {
 menuButton.addEventListener('click', openNavMenu);
 closeButton.addEventListener('click', closeNavMenu);
 
+for (var i=0;i < itemLinks.length;i++) {
+  itemLinks[i].addEventListener('click', closeNavMenu);
+}
 
 
-// EJEMPLO CODEPEN
-// Variables
-// var page = document.querySelector('.page');
-// var menuTrigger = page.querySelector('.menu-trigger');
-// var menuCloseBTN = page.querySelector('.menu-close');
-//
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // // Functions
 // function openNavMenu() {
 // 	page.classList.add('page--menu-visible');

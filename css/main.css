@@ -1,3 +1,7 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i");
+
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700");
+
 * {
   margin: 0;
   padding: 0;
@@ -18,7 +22,7 @@ body {
 }
 
 .hero--title {
-  font-family: RobotoSlab;
+  font-family: 'Roboto Slab', serif;
   font-size: 42px;
   font-weight: bold;
   font-style: normal;
@@ -31,11 +35,15 @@ body {
   color: #ffffff;
   text-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
   margin: 0 auto;
+  background: transparent;
+  -webkit-transition: background ease .7s;
+  transition: background ease .7s;
 }
 
 .hero--text {
   color: #ffffff;
-  font-family: Roboto;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
   font-size: 16px;
   text-align: center;
   padding-top: 10px;
@@ -78,14 +86,35 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  -webkit-transform: translateX(-120%);
-  transform: translateX(-120%);
   width: 276px;
   height: 100vh;
   opacity: 0.96;
   background-color: #ffffff;
   padding-top: 44px;
   z-index: 2;
+  -webkit-transform: translateX(-120%);
+  transform: translateX(-120%);
+  background: rgba(255, 255, 255, 0);
+  -webkit-transition: background ease 1s .7s, -webkit-transform ease .3s;
+  transition: background ease 1s .7s, -webkit-transform ease .3s;
+  transition: transform ease .3s, background ease 1s .7s;
+  transition: transform ease .3s, background ease 1s .7s, -webkit-transform ease .3s;
+}
+
+.menu-visible .sideMenu {
+  background: rgba(255, 255, 255, 0.96);
+  -webkit-transform: translateX(0%);
+  transform: translateX(0%);
+  -webkit-transition: background ease 1s .7s, -webkit-transform ease .8s;
+  transition: background ease 1s .7s, -webkit-transform ease .8s;
+  transition: transform ease .8s, background ease 1s .7s;
+  transition: transform ease .8s, background ease 1s .7s, -webkit-transform ease .8s;
+}
+
+.menu-visible .hero {
+  background: rgba(0, 0, 0, 0.5);
+  -webkit-transition: background ease .7s;
+  transition: background ease .7s;
 }
 
 .close-button {
@@ -112,16 +141,11 @@ body {
   text-decoration: none;
   padding-left: 15px;
   color: #304268;
-  font-family: RobotoSlab;
+  font-family: 'Roboto Slab', serif;
   font-size: 16px;
   font-weight: 300;
   line-height: 45px;
   text-align: left;
-}
-
-.menu-visible {
-  -webkit-transform: translateX(0%);
-  transform: translateX(0%);
 }
 
 .looking {
@@ -130,7 +154,8 @@ body {
 
 .looking--span {
   color: #8ccbea;
-  font-family: Roboto;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
   text-align: left;
   font-size: 14px;
   line-height: 30px;
@@ -138,7 +163,7 @@ body {
 
 .looking--title {
   color: #000000;
-  font-family: RobotoSlab;
+  font-family: 'Roboto Slab', serif;
   font-size: 24px;
   font-weight: bold;
   line-height: 30px;
@@ -148,7 +173,8 @@ body {
 
 .looking--text {
   color: #4a4a4a;
-  font-family: Roboto-Regular;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
   font-size: 18px;
   line-height: 30px;
   text-align: left;
@@ -160,7 +186,7 @@ body {
   height: 45px;
   border-radius: 22.5px;
   border: solid 2px #f26002;
-  font-family: Roboto;
+  font-family: 'Roboto', sans-serif;
   font-size: 20px;
   font-weight: 500;
   line-height: 2.25;
@@ -180,7 +206,7 @@ body {
 
 .reasons--title {
   color: #000000;
-  font-family: RobotoSlab;
+  font-family: 'Roboto Slab', serif;
   font-size: 24px;
   font-weight: bold;
   line-height: 1.25;
@@ -200,7 +226,7 @@ body {
 
 .reason--title {
   color: #000000;
-  font-family: RobotoSlab;
+  font-family: 'Roboto Slab', serif;
   font-size: 18px;
   font-weight: bold;
   line-height: 30px;
@@ -208,7 +234,8 @@ body {
 }
 
 .reason--description {
-  font-family: Roboto-Regular;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
   font-size: 18px;
   line-height: 30px;
   text-align: center;
@@ -222,11 +249,13 @@ body {
   background-color: #f26002;
   border: 2px solid #f26002;
   border: 0;
-  margin: 0 auto;
+  display: block;
+  margin: auto;
+  margin-bottom: 60px;
 }
 
 .reasons--button-text {
-  font-family: Roboto;
+  font-family: 'Roboto', sans-serif;
   font-size: 20px;
   font-weight: 500;
   font-style: normal;
