@@ -54,9 +54,6 @@ body {
 	margin: 0 auto;
 }
 
-
-
-
 .button--scroll-down {
 	position: absolute;
 	left: 0;
@@ -69,7 +66,7 @@ body {
 	// margin: 0 auto;
 }
 
-.arrow-container { //su Rectangle-3
+.arrow-container-down { //su Rectangle-3
   width: 45px;
   height: 45px;
   border-radius: 22.5px;
@@ -92,6 +89,9 @@ body {
 
 
 
+
+
+
 .menu-button {
 	width: 44px;
 	height: 44px;
@@ -99,23 +99,24 @@ body {
 	border: 0;
 }
 
-
 .sideMenu {
 	position: fixed;
 	top: 0;
 	left: 0;
-	transform: translateX(-150%);
+	// transform: translateX(0%);
+	transform: translateX(-120%);
   width: 276px;
 	height: 100vh;
-  opacity: 0.8;
-  // opacity: 0.96;
+  opacity: 0.96;
   background-color: $colorWhite;
 	padding-top: 44px;
+	z-index: 2;
 }
 
 .close-button {
-	background-color: orange;
+	background-color: $bright-orange;
 	position: absolute;
+	border: 0;
 	top: 0;
 	left: 100%;
 	width: 44px;
@@ -124,16 +125,23 @@ body {
 
 .menu--item {
 	list-style: none;
-	border-top: 1px solid red;
+	border-top: 1px solid $colorLightBlue;
 	&:last-child {
-	border-bottom: 1px solid red;
+	border-bottom: 1px solid $colorLightBlue;
 	}
 }
 
-.menu_link {
+.menu--link {
 	display: block;
 	text-decoration: none;
-	background-color: yellow;
+	padding-left: 15px;
+	// width: 139px;
+  color: $colorDarkBlue;
+	font-family: RobotoSlab;
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 45px;
+	text-align: left;
 }
 
 .menu-visible {
@@ -143,9 +151,68 @@ body {
 
 
 
+
+
+
+
+
+
+
+
+
 .looking {
-	background-color: tomato;
+	margin: 30px 15px;
 }
+
+.looking--span {
+	// width: 90px;
+	// height: 30px;
+	color: $colorLightBlue;
+	font-family: Roboto;
+	text-align: left;
+	font-size: 14px;
+	line-height: 30px;
+}
+
+.looking--title {
+	// width: 290px;
+	// height: 60px;
+	color: $colorBlack;
+	font-family: RobotoSlab;
+	font-size: 24px;
+	font-weight: bold;
+	line-height: 30px;
+	text-align: left;
+	padding-bottom: 15px;
+}
+
+.looking--text {
+	// width: 290px;
+	// height: 120px;
+	color: $colorDarkGrey;
+	font-family: Roboto-Regular;
+	font-size: 18px;
+	line-height: 30px;
+	text-align: left;
+	padding-bottom: 30px;
+}
+
+.btn--go {
+	width: 76px;
+  height: 45px;
+  border-radius: 22.5px;
+  border: solid 2px $bright-orange;
+// 	width: 25px;
+// height: 45px;
+	font-family: Roboto;
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 2.25;
+	text-align: center;
+	color: $bright-orange;
+	background-color: $colorWhite;
+}
+
 
 
 
@@ -158,6 +225,10 @@ body {
   background-color: #eff9ff;//color no de la paleta
 }
 
+.reasons--general-container {
+	position: relative;
+}
+
 .reasons--title { //su -Reasons-To-Purchas
   // width: 290px;
   // height: 30px;
@@ -168,6 +239,9 @@ body {
 	font-weight: bold;
 	line-height: 1.25;
 	text-align: center;
+
+	padding-top: 30px;
+	padding-bottom: 45px;
 }
 
 
@@ -202,4 +276,41 @@ body {
 	line-height: 30px;
 	text-align: center;
 	color: $colorBlack;
+}
+
+.reasons--button { //su Rectangle-3
+  width: 184px;
+  height: 45px;
+
+  border-radius: 22.5px;
+  background-color: $bright-orange;
+	border: 2px solid #f26002;
+	border: 0;
+	margin: 0 auto;
+	// bottom: 60px;
+	// top: 0;
+	// left: 0;
+	// right: 0;
+
+	// transform: translateX(50%);
+	// left: 50%;
+}
+
+
+.reasons--button-text { //su go
+	// width: 133px;
+	// height: 45px;
+
+	font-family: Roboto;
+	font-size: 20px;
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+
+	line-height: 2.25;
+	letter-spacing: normal;
+	text-align: center;
+	color: $colorWhite;
+
+	margin: 0 auto;
 }

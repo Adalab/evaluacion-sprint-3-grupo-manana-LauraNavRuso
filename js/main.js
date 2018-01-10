@@ -1,21 +1,21 @@
 'use strict';
 
 // 1. FUNCIONALIDAD MENÚ LATERAL_____________
-// var body = document.querySelector('body');
-// var menuButton = document.querySelector('.menu_button')
-// var closeButton = document.querySelector('.close_button');
-//
-//
-// function openNavMenu() {
-// 	body.classList.add('menu-visible');
-// };
-//
-// function closeNavMenu() {
-// 	body.classList.remove('menu-visible');
-// };
-//
-// menuButton.addEventListener('click', openNavMenu);
-// closeButton.addEventListener('click', closeNavMenu);
+var body = document.querySelector('body');
+var menuButton = document.querySelector('.menu-button')
+var closeButton = document.querySelector('.close-button');
+
+
+function openNavMenu() {
+	body.classList.add('menu-visible');
+};
+
+function closeNavMenu() {
+	body.classList.remove('menu-visible');
+};
+
+menuButton.addEventListener('click', openNavMenu);
+closeButton.addEventListener('click', closeNavMenu);
 
 
 
