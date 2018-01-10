@@ -182,7 +182,7 @@ body {
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
   font-weight: 500;
-  line-height: 2.25;
+  line-height: 45px;
   text-align: center;
   color: #f26002;
   background-color: #ffffff;
@@ -329,6 +329,8 @@ body {
   }
 
   .looking {
+    margin-left: 39px;
+    margin-right: 39px;
     margin-bottom: 45px;
   }
 
@@ -338,8 +340,17 @@ body {
     padding-bottom: 30px;
   }
 
+  .looking--title {
+    font-size: 32px;
+  }
+
   .looking--text {
     font-size: 20px;
+  }
+
+  .btn--go {
+    font-size: 20px;
+    width: 91px;
   }
 
   .reasons--title {
@@ -350,10 +361,34 @@ body {
   .reasons--container {
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 30px;
+    margin-bottom: 60px;
   }
 
   .reason--title {
     padding-bottom: 20px;
+  }
+}
+
+@media all and (min-width: 1280px) {
+  .hero--title {
+    font-size: 100px;
+    line-height: 132px;
+    padding-top: 200px;
+  }
+
+  .looking {
+    margin-left: 275px;
+    margin-right: 275px;
+    margin-bottom: 60px;
+  }
+
+  .btn--go {
+    width: 109px;
+  }
+
+  .reasons--title {
+    font-size: 32px;
+    padding-top: 30px;
   }
 }
 
