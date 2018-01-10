@@ -12,15 +12,6 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  // &:before {
-	// 	content: '';
-	// 	position: absolute;
-	// 	top: 0;
-	// 	right: 0;
-	// 	bottom: 0;
-	// 	left: 0;
-	// 	background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), #000000);
-	// }
 }
 
 .hero--title {
@@ -39,10 +30,14 @@ body {
   color: $colorWhite;
   text-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
 	margin: 0 auto;
-	// line-height: 55px;
-	// width: 100%;
-	// background: rgba(black,0);
-	// transition: background ease .7s;
+
+	@media all and (min-width:768px) {
+			// width: 690px;
+		  // height: 212px;
+			font-size: 80px;
+			line-height: 95px;
+    	padding-top: 200px;
+	}
 }
 
 .hero--text {
@@ -55,6 +50,12 @@ body {
 	text-align: center;
 	padding-top: 10px;
 	margin: 0 auto;
+
+	@media all and (min-width:768px) {
+		// width: 360px;
+		// height: 32px;
+    font-size: 24px;
+	}
 }
 
 .button--scroll-down {
@@ -62,11 +63,10 @@ body {
 	left: 0;
 	bottom: 53px;
 	right: 0;
-	// width: 45px;
-	// height: 45px;
-	// background: #ffffff;
-	// border-radius: 50%;
-	// margin: 0 auto;
+
+	@media all and (min-width:768px) {
+		bottom: 35px;
+	}
 }
 
 .arrow-container-down { //su Rectangle-3
@@ -120,14 +120,6 @@ body {
 	}
 }
 
-
-
-
-
-
-
-
-
 .close-button {
 	background-color: $bright-orange;
 	position: absolute;
@@ -159,27 +151,12 @@ body {
 	text-align: left;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .looking {
 	margin: 30px 15px;
+
+	@media all and (min-width:768px) {
+		margin-bottom: 45px;
+	}
 }
 
 .looking--span {
@@ -191,7 +168,7 @@ body {
 	text-align: left;
 	font-size: 14px;
 	line-height: 30px;
-}
+	}
 
 .looking--title {
 	// width: 290px;
@@ -203,6 +180,12 @@ body {
 	line-height: 30px;
 	text-align: left;
 	padding-bottom: 15px;
+
+	@media all and (min-width:768px) {
+		font-size: 26px;
+		line-height: 45px;
+		padding-bottom: 30px;
+	}
 }
 
 .looking--text {
@@ -215,6 +198,10 @@ body {
 	line-height: 30px;
 	text-align: left;
 	padding-bottom: 30px;
+
+	@media all and (min-width:768px) {
+		font-size: 20px;
+	}
 }
 
 .btn--go {
@@ -238,6 +225,8 @@ body {
   // height: 624px;
   background-color: #eff9ff;//color no de la paleta
 	height: 100%;
+	padding-left: 30px;
+	padding-right: 30px;
 }
 
 
@@ -253,17 +242,31 @@ body {
 	text-align: center;
 	padding-top: 30px;
 	padding-bottom: 45px;
-}
 
+	@media all and (min-width:768px) {
+		font-size: 26px;
+		line-height: 45px;
+	}
+}
 
 .reasons--container {  //contenedor de sistema grid maquetación
   display: grid;
-  width: 180px;
+	padding-left: 53px;
+	padding-right: 53px;
+
+  // width: 180px;
   margin: 0 auto; //hace que se centre también
   // grid-template-rows: 1fr 1fr 1fr;
 	grid-template-columns: 1fr;
   grid-gap: 45px;
   margin-bottom: 45px;
+
+	@media all and (min-width:768px) {
+
+		// width: 0px;
+	  grid-template-columns: 1fr 1fr 1fr;
+		grid-gap: 30px;
+	}
 }
 
 .reason--title { //su Ut-sed-metus (reason title 1)
@@ -276,6 +279,10 @@ body {
 	font-weight: bold;
 	line-height: 30px;
 	text-align: center;
+
+	@media all and (min-width:768px) {
+		padding-bottom: 20px;
+	}
 }
 
 .reason--description { //su Lorem-ipsum-dolor-si (reason description 1)
@@ -302,21 +309,12 @@ body {
 	display: block;
 	margin: auto;
 	margin-bottom: 60px;
-
-	// bottom: 60px;
-	// top: 0;
-	// left: 0;
-	// right: 0;
-
-	// transform: translateX(50%);
-	// left: 50%;
 }
 
 
 .reasons--button-text { //su go
 	// width: 133px;
 	// height: 45px;
-
 	font-family: 'Roboto', sans-serif;
 	font-size: 20px;
 	font-weight: 500;

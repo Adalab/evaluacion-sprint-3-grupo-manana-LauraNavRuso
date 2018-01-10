@@ -191,6 +191,8 @@ body {
 .reasons {
   background-color: #eff9ff;
   height: 100%;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .reasons--title {
@@ -206,7 +208,8 @@ body {
 
 .reasons--container {
   display: grid;
-  width: 180px;
+  padding-left: 53px;
+  padding-right: 53px;
   margin: 0 auto;
   grid-template-columns: 1fr;
   grid-gap: 45px;
@@ -308,6 +311,50 @@ body {
 
 .heart {
   color: #f26002;
+}
+
+@media all and (min-width: 768px) {
+  .hero--title {
+    font-size: 80px;
+    line-height: 95px;
+    padding-top: 200px;
+  }
+
+  .hero--text {
+    font-size: 24px;
+  }
+
+  .button--scroll-down {
+    bottom: 35px;
+  }
+
+  .looking {
+    margin-bottom: 45px;
+  }
+
+  .looking--title {
+    font-size: 26px;
+    line-height: 45px;
+    padding-bottom: 30px;
+  }
+
+  .looking--text {
+    font-size: 20px;
+  }
+
+  .reasons--title {
+    font-size: 26px;
+    line-height: 45px;
+  }
+
+  .reasons--container {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
+  }
+
+  .reason--title {
+    padding-bottom: 20px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
