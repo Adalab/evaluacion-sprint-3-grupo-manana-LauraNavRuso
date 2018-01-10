@@ -19,6 +19,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  position: relative;
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -79,6 +80,8 @@ body {
   height: 44px;
   background-color: #0271bc;
   border: 0;
+  position: absolute;
+  left: 0;
 }
 
 .sideMenu {
