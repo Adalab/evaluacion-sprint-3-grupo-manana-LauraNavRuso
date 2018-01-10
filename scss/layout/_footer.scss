@@ -1,0 +1,75 @@
+.footer-container {
+	background-color: $colorDarkBlue;
+	width: 100vh;
+	height: 128px;
+}
+
+.arrow-container {
+	background-color: $colorWhite;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+	width: 45px;
+  height: 45px;
+}
+
+
+
+
+// .button-to-top {
+//
+// }
+
+
+.copyright-text {
+	// width: 77px;
+	height: 30px;
+	font-family: Roboto;
+	font-size: 14px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 2.14;
+	letter-spacing: normal;
+	text-align: center;
+	color: $colorWhite;
+}
+.love-text {
+	// width: 290px;
+	height: 30px;
+	font-family: "Roboto", serif;
+	font-size: 14px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 2.14;
+	letter-spacing: normal;
+	text-align: center;
+	color: $colorWhite;
+}
+.heart {
+	color: $bright-orange;
+}
+
+
+
+
+
+
+// .footer{
+//
+// 	position: relative;
+// }
+//
+// .footer_container{
+// 	min-width: 290px;
+// 	margin: 0 30px;
+// 	padding-top:38px;
+// 	text-align: center;
+// 	color: $colorWhite;
+// }
+//
+// .footer_container p{
+// 	font-size: 14px;
+// 	line-height: 30px;
+// 	font-family: $font-text;
+// 	font-weight: 400;
+// }

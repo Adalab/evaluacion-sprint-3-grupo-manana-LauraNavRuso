@@ -1,16 +1,88 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 	<head>
 		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="css/main.css">
+		<link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
 		<title>Eval LauNavRuso sprint3</title>
 	</head>
+
 	<body>
-		<p>Hola Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		<div class="main-container">
 
+			<nav id="sideMenu" class="sideMenu"> <!--Side menu-->
+				<button class="button close-button" title="Close">X</button>
+				<ul class="menu">
+					<li class="menu--item"><a href="#home" class="menu_link scroll">Anonymous Proxy</a></li>
+					<li class="menu--item"><a href="#looking" class="menu_link scroll">Look through a window</a></li>
+					<li class="menu--item"><a href="#reasons" class="menu_link scroll">Three Reasons To Purchase</a></li>
+				</ul>
+			</nav><!--end Side menu-->
 
+			<div class="hero" id="home"><!--hero cover-->
+				<button class="menu-button"><!--boton menu-->
+					<img src="images/ico-menu.svg" alt="menu button">
+				</button>
+				<div class="hero--container" id="home"><!--cover-->
+					<h2 class="hero--title">Anonymous Proxy</h2>
+					<p class="hero--text">In hac habitasse platea dictumst.</p>
+					<div class="button button--scroll-down">
+						<div class="arrow-container">
+							<a href="#looking" class="scroll-down-link"><img src="images/ico-scroll-down.svg" class="ico-scroll-down" alt="scroll down"></a>
+						</div>
+					</div>
+				</div><!--end hero--container-->
+			</div><!--end hero cover-->
 
+			<section class="looking" id="looking"><!--Looking Through A Window section-->
+				<div  class="block_container">
+					<span class="block_span">Insomnia Tips</span>
+					<h2 class="block_title looking_title">Looking Through A Window</h2>
+					<p class="block_text">Donec accumsan, nulla ut volutpat porttitor, quam odio tempus felis, at luctus ex diam nec lectus. Vivamus semper sodales rutrum.</p>
+					<button type="button" name="go" class="btn btn--go">Go</button>
+				</div>
+			</section><!--end Looking Through A Window section-->
 
-		<script type="text/javascript" src="main.js"></script>
+			<section class="reasons" id="reasons"><!--Reasons to purchase section-->
+				<div  class="reasons--general-container">
+					<h2 class="title reasons--title">3 Reasons To Purchase</h2>
+					<div class="reasons--container">
+						<div class="reasons--item item1">
+							<h3 class="reason--title title1">Ut sed metus</h3>
+							<p class="reason--description description1">Lorem ipsum dolor sit amet, consecteur.</p>
+						</div>
+						<div class="reasons--item item2">
+							<h3 class="reason--title title2">Curabitur ac erat</h3>
+							<p class="reason--description description2">Mauris mattis urna quis lorem molestie.</p>
+						</div>
+						<div class="reasons--item item3">
+							<h3 class="reason--title title3">Morbi dictum</h3>
+							<p class="reason--description description3">Aliquam in dolor et dolor tincidunt.</p>
+						</div>
+					</div>
+					<button type="button" name="reasons" class="btn reasons--button" id="btn--reasons">More Reasons</button>
+				</div>
+			</section><!--end Reasons to purchase section-->
+
+			<!-- <footer>
+				<div class="button-to-top">
+					<div class="arrow-container">
+						<a href="#home" class="scroll"><img src="images/ico-arrow.svg" class="arrow-to-top" alt="up-to-start"></a>
+					</div>
+				</div>
+				<div class="footer-container">
+					<div class="copyright">
+						<p class="copyright-text">&copy; 2017</p>
+					</div>
+					<div class="love">
+						<p class="love-text">we <span class="heart">❤︎</span> components</p>
+					</div>
+				</div>
+			</footer> -->
+		</div> <!--end main-container-->
+
+		<script type="text/javascript" src="js/main.js"></script>
 	</body>
 </html>
