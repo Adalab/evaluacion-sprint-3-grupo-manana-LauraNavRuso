@@ -23,41 +23,6 @@ for (var i=0;i < itemLinks.length;i++) {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// // Functions
-// function openNavMenu() {
-// 	page.classList.add('page--menu-visible');
-// };
-//
-// function closeNavMenu() {
-// 	page.classList.remove('page--menu-visible');
-// };
-//
-// // Magic
-// menuTrigger.addEventListener('click', openNavMenu);
-// menuCloseBTN.addEventListener('click', closeNavMenu);
-
-
-
-
-
-
-
-
 // 2. FUNCIONALIDAD AÑADIR NUEVAS RAZONES CON PETICIÓN AJAX_____________
 
 var reasonCounter = 4; //global variable to take into account the previous clicks on the more reasons button

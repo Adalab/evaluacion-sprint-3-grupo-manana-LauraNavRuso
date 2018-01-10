@@ -19,6 +19,8 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .hero--title {
