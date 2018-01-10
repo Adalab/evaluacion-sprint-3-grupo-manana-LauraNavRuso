@@ -35,9 +35,6 @@ body {
   color: #ffffff;
   text-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
   margin: 0 auto;
-  background: transparent;
-  -webkit-transition: background ease .7s;
-  transition: background ease .7s;
 }
 
 .hero--text {
@@ -83,38 +80,34 @@ body {
 }
 
 .sideMenu {
-  position: fixed;
-  top: 0;
-  left: 0;
+  position: relative;
   width: 276px;
   height: 100vh;
   opacity: 0.96;
   background-color: #ffffff;
   padding-top: 44px;
-  z-index: 2;
+  z-index: 1;
+}
+
+.navigation {
+  position: fixed;
+  top: 0;
+  left: 0;
   -webkit-transform: translateX(-120%);
   transform: translateX(-120%);
-  background: rgba(255, 255, 255, 0);
-  -webkit-transition: background ease 1s .7s, -webkit-transform ease .3s;
-  transition: background ease 1s .7s, -webkit-transform ease .3s;
-  transition: transform ease .3s, background ease 1s .7s;
-  transition: transform ease .3s, background ease 1s .7s, -webkit-transform ease .3s;
+  background-color: transparent;
+  -webkit-transition: background ease .7s .5s, -webkit-transform ease .5s;
+  transition: background ease .7s .5s, -webkit-transform ease .5s;
+  transition: transform ease .5s, background ease .7s .5s;
+  transition: transform ease .5s, background ease .7s .5s, -webkit-transform ease .5s;
+  z-index: 1;
 }
 
-.menu-visible .sideMenu {
-  background: rgba(255, 255, 255, 0.96);
+.menu-visible .navigation {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
   -webkit-transform: translateX(0%);
   transform: translateX(0%);
-  -webkit-transition: background ease 1s .7s, -webkit-transform ease .8s;
-  transition: background ease 1s .7s, -webkit-transform ease .8s;
-  transition: transform ease .8s, background ease 1s .7s;
-  transition: transform ease .8s, background ease 1s .7s, -webkit-transform ease .8s;
-}
-
-.menu-visible .hero {
-  background: rgba(0, 0, 0, 0.5);
-  -webkit-transition: background ease .7s;
-  transition: background ease .7s;
 }
 
 .close-button {
@@ -196,12 +189,8 @@ body {
 }
 
 .reasons {
-  width: 100vw;
   background-color: #eff9ff;
-}
-
-.reasons--general-container {
-  position: relative;
+  height: 100%;
 }
 
 .reasons--title {
@@ -283,7 +272,6 @@ body {
   position: relative;
   margin: 0 auto;
   top: -22px;
-  z-index: 1;
 }
 
 .arrow-to-top {
